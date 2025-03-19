@@ -8,4 +8,7 @@ optax
 orbax-checkpoint
 wandb
 protobuf
+gymnax
+brax
+tqdm
 numpy<2
