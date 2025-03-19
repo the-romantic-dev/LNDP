@@ -1,9 +1,6 @@
-import jax
 import jax.numpy as jnp
 import jax.random as jr
-import jax.nn as jnn
 from jax.experimental.shard_map import shard_map as shmap
-import jax.experimental.host_callback as hcb
 from jax.sharding import Mesh, PartitionSpec as P
 from jax.experimental import mesh_utils
 import evosax as ex
@@ -13,6 +10,7 @@ from jaxtyping import PyTree
 import os
 import wandb
 from utils.exputils import *
+
 
 Data: TypeAlias = PyTree[...]
 TaskParams: TypeAlias = PyTree[...]
